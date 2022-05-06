@@ -1,4 +1,4 @@
-package com.mycompany.classes;
+package classes;
 
 public class Celular {
 
@@ -23,9 +23,4 @@ public class Celular {
     public void llamar(String nombre){
         System.out.println("Llamando a " + nombre);
     }
-    public String[] caracteristicas(){
-       String [] carac = 
-    
-    }
-
-}
+ }
