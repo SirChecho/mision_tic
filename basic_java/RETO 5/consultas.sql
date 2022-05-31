@@ -1,0 +1,12 @@
+SELECT 'Consulta 1';
+SELECT fabricante FROM bicicletas UNION SELECT fabricante FROM motoselec ORDER BY fabricante;
+SELECT 'Consulta 2';
+SELECT * FROM bicicletas WHERE año>= 2019 ORDER BY fabricante;
+SELECT 'Consulta 3';
+SELECT fabricante FROM motoselec WHERE proveedor='Auteco';
+SELECT 'Consulta 4';
+SELECT producto FROM registros WHERE alias='lucky' ORDER BY producto;
+SELECT 'Consulta 5';
+SELECT c.alias, c.nombre, c.apellido FROM clientes c JOIN registros r ON c.alias=r.alias WHERE producto='Yeti'; 
+SELECT 'Consulta 6';
+SELECT COUNT(fabricante) FROM bicicletas WHERE año>=2019;
